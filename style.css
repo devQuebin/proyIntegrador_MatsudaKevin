@@ -1,0 +1,26 @@
+body {
+    font-family: monospace;
+}
+section h1{
+    color:darkblue;
+}
+.titulo{
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 29px;
+    letter-spacing: 4.2px;
+    word-spacing: 0px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+}
+
+section {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 5px;
+} 

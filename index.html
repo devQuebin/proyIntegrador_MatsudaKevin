@@ -1,75 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kevin Matsuda - Portfolio</title>
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Kevin Matsuda - Portfolio</title>
+
+  <!--font roboto regular-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+<!--Bootstrap5-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!--CSS-->
+<link rel="stylesheet" href="style.css">
+<!--scroll-->
+<script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
-   <nav class="navbar navbar-expand-sm bg-dark">
 
-        <div class="container-fluid">
-          <!-- Links -->
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#experience">Experience</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Log in</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav/link" href="#education">Education</a>
-            </li>
-          </ul>
-        </div>
+  <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
 
-      </nav>
-    <header>
-        <img src="img/cuarenkevin2.png" style="width: 50%;" alt="Foto kevin matsuda">
-      <h1 id="name" class="titulo">Kevin Matsuda</h1>
-      <p id="profile">Full Stack Web Developer - Industrial Designer - Technician</p>
-      <p id="location">Buenos Aires (Argentina)</p>
-    </header>
-    <section id="about">
-      <h1>About</h1>
-      <p  id="pAbout">Desarrollador Frontend: html, css, javascript</p>
-      <button class="btn btn-dark" onclick="onEdit()">Editar</button>
-    </section>
-    <section id="experience">
-      <h1>Experience</h1>
-      <div class="container-fluid">
-        <div class="row">
-            <div class="col-2">
-                <img src="imagenes/html5.png" class="img-fluid" alt="as">
-            </div>
-            <div class="col">
-                <h2>Diseñador Industrial</h2>
-                <p>Sumapack</p>
-                <p>Septiembre 2020 - Actualidad</p>
-            </div>
-        </div>
+   <div class="container">
+
+    <a href="#" class="navbar-brand">PORTFOLIO</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#firstNavbar" aria-controls="firstNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+</button>
+<!--el boton funciona, abre, pero no cierra-->
+    <div class="collapse navbar-collapse" id="firstNavbar">
+
+     <ul class="navbar-nav ml-auto">
+ <!--por que no se acomoda a la izq?-->
+       <li class="nav-item"><a class="nav-link" href="#perfil">Perfil</a></li>
+       <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+       <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+       <li class="nav-item"><a class="nav-link" href="#educacion">Educacion y Distinciones</a></li>
+       <li class="nav-item"><a class="nav-link" href="contacto">Contacto</a></li>
+       <li class="nav-item"><a class="nav-link" href="#login">Login</a></li>
+     </ul>
+     </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="header-content-left">
+          <h2>HOLA! SOY</h2>
+          <h1 class="display-4">KEVIN MATSUDA</h1>
+          <h3 class="mb">DISEÑADOR - TECNICO - DESARROLLADOR</h3>
+          </div>
+        </div> 
+        <div class="col-md-6">
+          <div class="header-content-right">
+          <img src="img/cuarenkevin2.png" style="width: 100%;" alt="Foto kevin matsuda">
+          </div>
+        </div>             
       </div>
+    </div>
+</header>
 
-      <h2>Docente Ayudante de Primera</h2>
-      <p>FADU - UBA</p>
-      <p>Agosto 2013 - Actualidad</p>
-    </section>
-    <section id="education">
-        <h1>Education</h1>
-        <div class="container-fuid">
-            <div class="row">
+<!--perfil-->
+<section id="perfil">
+  <div class="container">
+  <h1 class="light">Perfil</h1>
+  <p class="h5">Hola! Soy Kevin, diseñador industrial, y técnico electromecánico trilingüe. Estoy dando mis primeros pasos como desarrollador y todos los días estoy aprendiendo algo nuevo. Considero que los trabajos en equipos multidisciplinarios son de vital importancia para un crecimiento profesional y personal. Cuento con mas de 10 años de experiencia coordinando equipos de diseño y de producción. Además cuento con 8 años de experiencia en la docencia universitaria.</p>
+  <button class="btn btn-secondary" onclick="onEdit()">Editar</button>
+</div>
+</section>
 
-            </div>
+<!--exp-->
+<div class="container">
+<section id="experiencia">
+  <h1>Experiencia</h1>
+  <div class="container">
+    <div class="row">
+        <div class="col-2">
+            <img src="img/logo sumapack.jpg" class="img-fluid" alt="as">            
         </div>
-    <footer>
-        <p>@2022 Matsuda</p>
-    </footer>
-    <script src="js/app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+        <div class="col">
+            <h2>SUMAPACK</h2>
+            <p class="h4">Diseñador y Encargado de producción</p>
+            <p>Septiembre 2020 - Actualidad</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+          <div class="col-2">
+              <img src="img/uba.jpg" class="img-fluid" alt="uba">            
+          </div>
+          <div class="col">
+              <h2>FADU UBA</h2>
+              <p class="h4">Docente de Grado - Diseño Industrial  </p>
+              <p>Agosto 2013 - Actualidad</p>
+          </div>
+      </div>
+      </div>
+</section>
+</div>
+<!--educacion y distinciones-->
+<div class="container">
+<section id="educacion">
+    <h1>Educacion</h1>
+    <div class="container">
+      <div class="row">
+          <div class="col-2">
+              <img src="img/uba.jpg" class="img-fluid" alt="uba">            
+          </div>
+          <div class="col">
+              <h2>DEOSARROLLO FULL STACK</h2>
+              <p class="h4">ARGENTINA PROGRAMA - MINISTERIO DE DESARROLLO </p>
+              <p>2021 - 2022</p>
+          </div>
+      </div>
+      </div>
+      
+</section>
+</div>
+<footer>
+    <p>@2022 Matsuda</p>
+</footer>
+
+<!--scripts BS5-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </body>
 </html>
